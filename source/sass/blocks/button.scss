@@ -1,8 +1,11 @@
 .button {
+  display: inline-block;
+
   height: 45px;
-  padding: 0 25px;
+  padding: 15px 25px;
 
   text-align: center;
+  vertical-align: middle;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 
@@ -17,13 +20,15 @@
   line-height: 16px;
 
   &--header {
+    transform: translate(0, -2px);
+
     color: $contrast-text-color;
   }
 
   &--main-screen {
     height: 55px;
     margin: 44px 0 0 98px;
-    padding: 0 45px;
+    padding: 15px 45px;
 
     text-align: center;
 
@@ -33,5 +38,26 @@
 
     font-size: 16px;
     line-height: 19px;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .button--header {
+    display: none;
+  }
+
+  .button--main-screen {
+    margin: 56px 0 0 53px;
+    padding: 15px 29px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .button--main-screen {
+    width: 89.5%;
+    margin: 42px 0 0 5.7%;
+    padding: 15px 25px;
+
+    text-align: center;
   }
 }

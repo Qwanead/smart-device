@@ -10,44 +10,60 @@
 
   <body>
 
+    <div class="visually-hidden">
+      <include src="./build/img/sprite_auto.svg"></include>
+    </div>
+
     <header class="header">
 
-      <div class="header__wrapper">
-        <div class="header__logo-wrapper">
-          <div class="logo">
-            <img class="logo__img" src="./img/logo.svg" alt="Логотип Smart device" width="52px" height="52px">
-            <div class="logo__wrapper">
-              <p class="logo__title">Smart Device</p>
-              <p class="logo__subtitle">Умные технологии</p>
+      <div class="header__outer-wrapper">
+        <div class="header__wrapper">
+          <div class="header__logo-wrapper">
+            <div class="logo">
+              <img class="logo__img" src="./img/logo.svg" alt="Логотип Smart device" width="52" height="52">
+              <div class="logo__wrapper">
+                <p class="logo__title">Smart Device</p>
+                <p class="logo__subtitle">Умные технологии</p>
+              </div>
             </div>
+
+            <ul class="header__list">
+              <li class="header__item header__item--mail">
+                <a href="mailto:info@sd.ru">
+                  <svg width="19" height="14">
+                    <use xlink:href="#icon-envelope"></use>
+                  </svg>
+                  <span>info@sd.ru</span>
+                </a>
+              </li>
+              <li class="header__item header__item--tel">
+                <a href="tel:+74950005252">
+                  <svg width="18" height="18">
+                    <use xlink:href="#icon-phone-call"></use>
+                  </svg>
+                  <span>+7 (495) 000 52 52</span>
+                </a>
+              </li>
+              <li class="header__item">
+                <a class="button button--header" href="#">Заказать звонок</a>
+              </li>
+            </ul>
           </div>
 
-          <ul class="header__list">
-            <li class="header__item header__item--mail">
-              <a href="mailto:info@sd.ru">info@sd.ru</a>
-            </li>
-            <li class="header__item header__item--tel">
-              <a href="tel:+74950005252">+7 (495) 000 52 52</a>
-            </li>
-            <li class="header__item">
-              <button class="button button--header" href="#">Заказать звонок</button>
-            </li>
-          </ul>
+          <h1 class="visually-hidden">Smart Device</h1>
+
+          <section class="main-screen">
+            <div class="main-screen__description">
+              <h2>Печатные платы</h2>
+              <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
+              <a href="#" class="button button--main-screen">
+                <span class="main-screen__button-text">Получить бесплатную консультацию</span>
+                <span class="main-screen__button-text main-screen__button-text--mobile">Бесплатная консультация</span>
+              </a>
+              <div class="main-screen__scroll">Скролл вниз</div>
+            </div>
+          </section>
         </div>
-
-        <h1 class="visually-hidden">Smart Device</h1>
-
-        <section class="main-screen">
-          <div class="main-screen__description">
-            <h2>Печатные платы</h2>
-            <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-            <button class="button button--main-screen">Получить бесплатную консультацию</button>
-            <div class="main-screen__scroll">Скролл вниз</div>
-          </div>
-
-          <img src="./img/circuit-desktop@1x.png" alt="Печатные платы" width="705px" height="515px">
-
-        </section>
       </div>
 
     </header>
@@ -84,9 +100,9 @@
 
       </section>
 
-      <secton class="about">
+      <section class="about">
 
-        <img src="./img/2005-desktop@1x.png" alt="Год основания компании: 2005" width="317px" height="220px" >
+        <img src="./img/2005-desktop@1x.png" alt="Год основания компании: 2005" width="317" height="220" >
 
         <div class="about__description">
           <h2>О компании</h2>
@@ -95,10 +111,10 @@
 
           <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
 
-          <button class="button">Подробнее</button>
+          <a class="button">Подробнее</a>
         </div>
 
-      </secton>
+      </section>
 
       <section class="service">
 
@@ -147,7 +163,7 @@
       <div class="footer__social-wrapper">
 
         <div class="logo">
-          <img class="logo__img" src="./img/logo.svg" alt="Логотип Smart device" width="52px" height="52px">
+          <img class="logo__img" src="./img/logo.svg" alt="Логотип Smart device" width="52" height="52">
           <p class="logo__header">Smart Device</p>
           <p class="logo__subtitle">Умные технологии</p>
         </div>
@@ -168,17 +184,13 @@
         <h2>Разделы сайта</h2>
 
         <ul class="footer__site-map-list">
-          <div class="footer__site-map-wrapper">
-            <li class="footer__site-map-item"><a href="#">О компании</a></li>
-            <li class="footer__site-map-item"><a href="#">Продукты</a></li>
-            <li class="footer__site-map-item"><a href="#">Производство печатных плат</a></li>
-            <li class="footer__site-map-item"><a href="#">Монтаж печатных плат</a></li>
-          </div>
-          <div class="footer__site-map-wrapper">
-            <li class="footer__site-map-item"><a href="#">Комплектующие</a></li>
-            <li class="footer__site-map-item"><a href="#">Доставка</a></li>
-            <li class="footer__site-map-item"><a href="#">Контакты</a></li>
-          </div>
+          <li class="footer__site-map-item"><a href="#">О компании</a></li>
+          <li class="footer__site-map-item"><a href="#">Продукты</a></li>
+          <li class="footer__site-map-item"><a href="#">Производство печатных плат</a></li>
+          <li class="footer__site-map-item"><a href="#">Монтаж печатных плат</a></li>
+          <li class="footer__site-map-item"><a href="#">Комплектующие</a></li>
+          <li class="footer__site-map-item"><a href="#">Доставка</a></li>
+          <li class="footer__site-map-item"><a href="#">Контакты</a></li>
         </ul>
 
       </section>
@@ -191,6 +203,7 @@
           <li><a href="tel:+74955894050">+7 (495) 589-40-50</a></li>
           <li><a href="tel:+79250038767">+7 (925) 003-87-67</a></li>
           <li><a href="tel:+792692608079">+7 (926) 926-080-79</a></li>
+        </ul>
       </section>
 
       <section class="footer__copyright">
@@ -203,6 +216,34 @@
       </section>
 
     </footer>
+
+    <section class="modal">
+
+      <button class="modal__close">Закрыть</button>
+
+      <h2>Закажите звонок</h2>
+      <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+
+      <form method="post" action="https://echo.htmlacademy.ru">
+
+        <label class="visually-hidden" for="modal-name-id">Имя</label>
+        <input type="text" name="name" id="modal-name-id" placeholder="Имя">
+
+        <label class="visually-hidden" for="modal-tel-id">Телефон</label>
+        <input type="tel" name="tel" id="modal-tel-id" placeholder="Телефон">
+
+        <label class="visually-hidden" for="modal-question-id">Ваш вопрос</label>
+        <textarea name="question" id="modal-question-id" placeholder="Ваш вопрос"></textarea>
+
+
+        <button class="button button--modal" type="submit">Отправить</button>
+
+        <input type="checkbox" name="checkbox" id="modal-checkbox-id">
+        <label for="modal-checkbox-id">Я согласен на обработку  персональных данных</label>
+
+      </form>
+
+    </section>
 
   </body>
 

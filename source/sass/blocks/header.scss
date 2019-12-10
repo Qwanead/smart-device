@@ -1,8 +1,21 @@
 .header {
-  min-height: 881px;
+  min-height: 878px;
 
   background-color: $default-background-color;
-  background-image: url("../../img/background-desktop@1x.png");
+  background-image:
+    url("../img/circuit-desktop@1x.png"),
+    url("../img/background-desktop@1x.png");
+  background-repeat: no-repeat;
+  // background-position: 1037px 260px, center;
+  background-position: 86.5% 70.5%, center;
+
+  @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
+    background-image:
+      url("../img/circuit-desktop@2x.png"),
+      url("../img/background-desktop@2x.png");
+    background-size: 705px 515px, cover;
+  }
+
 
   // > * > * {
   //   outline: 1px dashed pink;
@@ -17,8 +30,12 @@
   // }
 }
 
+.header__outer-wrapper {
+  margin: 0 20px;
+}
+
 .header__wrapper {
-  width: 1420px;
+  max-width: 1420px;
   margin: 0 auto;
 }
 
@@ -36,6 +53,7 @@
   padding: 0;
 
   list-style-type: none;
+  flex-wrap: wrap;
 }
 
 .header__item a {
@@ -46,12 +64,118 @@
 .header__item--tel {
   padding-top: 10px;
   padding-left: 50px;
+
+  & a {
+    position: relative;
+  }
+
+  & svg {
+    position: absolute;
+  }
 }
 
 .header__item--tel {
   margin-right: 50px;
+
+  & svg {
+    top: 0;
+    left: -34px;
+  }
 }
 
 .header__item--mail {
   margin-right: 73px;
+
+  & svg {
+    top: 2px;
+    left: -38px;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .header {
+    min-height: 622px;
+
+    background-image:
+      url("../img/circuit-tablet@1x.png"),
+      url("../img/background-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: 100% 32.7%, 0 0;
+    background-size: auto, cover;
+
+    @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
+      background-image:
+        url("../img/circuit-tablet@2x.png"),
+        url("../img/background-tablet@2x.png");
+      background-size: 260px 340px, cover;
+    }
+  }
+
+  .header__outer-wrapper {
+    margin: 0;
+  }
+
+  .header__wrapper {
+    width: 100%;
+  }
+
+
+  .header__item--mail,
+  .header__item--tel {
+    padding-left: 0;
+
+    & span {
+      display: none;
+    }
+  }
+
+
+  .header__item--tel svg {
+    top: -17px;
+    left: 0;
+
+    width: 24px;
+    height: 24px;
+  }
+
+  .header__item--mail svg {
+    top: -13px;
+    left: 15px;
+
+    width: 25.33px;
+    height: 18.67px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .header {
+    min-height: 647px;
+
+    background-image:
+      url("../img/circuit-mobile@1x.png"),
+      url("../img/background-mobile@1x.png");
+    background-position: 100% 21.5%, 0 0;
+    background-size: auto, cover;
+
+    @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
+      background-image:
+        url("../img/circuit-mobile@2x.png"),
+        url("../img/background-mobile@2x.png");
+      background-size: 294px 220px, cover;
+    }
+  }
+
+  .header__logo-wrapper {
+    padding-top: 17px;
+  }
+
+  .header__item--mail svg {
+    top: -18px;
+    left: 35px;
+  }
+
+  .header__item--tel svg {
+    top: -21px;
+    left: 11px;
+  }
 }
