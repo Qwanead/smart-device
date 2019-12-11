@@ -130,5 +130,29 @@
   }
 }
 
-// @media (max-width: $tablet-width) {
-// }
+@media (max-width: $tablet-width) {
+  .advantages {
+    margin-top: 17px;
+  }
+
+  .advantages__list {
+    padding: 0 16px 0 14px;
+  }
+
+  .advantages__item {
+    width: 100%;
+    min-height: auto;
+    margin-top: 20px;
+    padding: 23px 20px 7px 25px;
+
+    &:nth-child(odd) {
+      margin-right: 0;
+    }
+  }
+
+  .advantages__item h3 {
+    margin-top: 7px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
