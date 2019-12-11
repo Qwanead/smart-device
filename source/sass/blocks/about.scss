@@ -1,0 +1,97 @@
+.about {
+  max-width: 1170px;
+  min-height: 320px;
+  margin: 0 auto;
+  margin-top: 106px;
+  padding-left: 187px;
+
+  background-image: url("./../img/2005-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-position: -23px 4px;
+
+  @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
+    background-image: url("./../img/2005-desktop@2x.png");
+    background-size: 220px 317px, cover;
+  }
+}
+
+.about h2 {
+  margin: 0;
+
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 51px;
+}
+
+.about__tablet-text {
+  display: none;
+}
+
+.about p {
+  margin-top: 20px;
+
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 22px;
+}
+
+@media (max-width: $desktop-width) {
+  .about {
+    min-height: 360px;
+    margin-top: 58px;
+    padding-right: 20px;
+    padding-left: 210px;
+
+    background-image: url("./../img/2005-tablet@1x.png");
+    background-position: 0 -2px;
+
+    @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
+      background-image: url("./../img/2005-tablet@2x.png");
+      background-size: 244px 362px, cover;
+    }
+  }
+
+  .about__tablet-text {
+    display: inline;
+  }
+
+  .about__desktop-text {
+    display: none;
+  }
+
+  .about h2 {
+    margin-bottom: 26px;
+
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  .about p {
+    padding-left: 3.5px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .about {
+    min-height: 300px;
+    padding-right: 12px;
+    padding-left: 15px;
+
+    background-image: none;
+  }
+
+  .about h2 {
+    margin-bottom: 21px;
+
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  .about p:last-of-type {
+    margin-top: 37px;
+  }
+}

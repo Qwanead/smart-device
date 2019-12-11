@@ -1,17 +1,5 @@
 .advantages {
-  margin-top: 82px;
-
-  // > * {
-  //   outline: 1px dashed pink;
-
-  //   > * {
-  //     outline: 1px dashed red;
-
-  //     > * {
-  //       outline: 1px dashed blue;
-  //     }
-  //   }
-  // }
+  padding-top: 82px;
 }
 
 .advantages__list {
@@ -37,6 +25,7 @@
 
   border: 1px solid $border-color;
   border-left: 3px solid $alternative-background-color;
+  background-color: $contrast-text-color;
 
   &:nth-child(odd) {
     margin-right: 30px;
@@ -84,7 +73,7 @@
 
 @media (max-width: $desktop-width) {
   .advantages {
-    margin-top: 22px;
+    padding-top: 22px;
   }
 
   .advantages__list {
@@ -132,7 +121,7 @@
 
 @media (max-width: $tablet-width) {
   .advantages {
-    margin-top: 17px;
+    padding-top: 17px;
   }
 
   .advantages__list {
@@ -152,6 +141,7 @@
 
   .advantages__item h3 {
     margin-top: 7px;
+
     font-size: 20px;
     line-height: 28px;
   }
