@@ -1,0 +1,50 @@
+.checkbox label {
+  position: relative;
+
+  opacity: 0.8;
+  color: $contrast-text-color;
+
+  font-size: 14px;
+  line-height: 16px;
+
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &::before {
+    position: absolute;
+    top: 2px;
+    left: -32px;
+
+    width: 16px;
+    height: 16px;
+
+    content: "";
+
+    border: 1px solid $contrast-text-color;
+  }
+}
+
+.checkbox input:checked + label::before {
+  background-image: url("./../img/checkbox-checked.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.checkbox input[type="checkbox"] {
+  position: absolute;
+
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+
+  width: 1px;
+  height: 1px;
+  padding: 0;
+
+  border: 0;
+}
+
+.checkbox input[type="checkbox"]:focus + label {
+  outline: 1px solid $contrast-text-color;
+}

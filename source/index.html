@@ -135,10 +135,10 @@
               <a class="service__item service__item--production" href="#">Производство печатных плат</a>
             </li>
             <li>
-              <a class="service__item service__item--mounting" href="#">Монтаж печатных плат</a href="#">
+              <a class="service__item service__item--mounting" href="#">Монтаж печатных плат</a>
             </li>
             <li>
-              <a class="service__item service__item--components" href="#">Комплектующие для светотехники</a href="#">
+              <a class="service__item service__item--components" href="#">Комплектующие для светотехники</a>
             </li>
           </ul>
         </div>
@@ -147,29 +147,43 @@
 
       <section class="feedback">
 
-        <h2>Остались вопросы? Задайте их нам!</h2>
-        <p>Мы проконсультируем Вас бесплатно</p>
+        <div class="feedback__wrapper">
+          <div class="feedback__form-wrapper">
+            <h2>Остались вопросы? Задайте их нам!</h2>
+            <p>Мы проконсультируем Вас бесплатно</p>
 
-        <form method="post" action="https://echo.htmlacademy.ru">
+            <form method="post" action="https://echo.htmlacademy.ru">
 
-          <div class="feedback__name-tel-wrapper">
-            <label class="visually-hidden" for="name-id">Имя</label>
-            <input type="text" name="name" id="name-id" placeholder="Имя">
+              <div class="feedback__name-tel-wrapper">
+                <div class="feedback__name">
+                  <label class="visually-hidden" for="name-id">Имя</label>
+                  <input type="text" name="name" id="name-id" placeholder="Имя" maxlength="20" required>
+                </div>
 
-            <label class="visually-hidden" for="tel-id">Телефон</label>
-            <input type="tel" name="tel" id="tel-id" placeholder="Телефон">
+                <div class="feedback__tel">
+                  <label class="visually-hidden" for="tel-id">Телефон</label>
+                  <input type="tel" name="tel" id="tel-id" placeholder="Телефон" pattern="(\+?\d[- .]*){7,13}" required>
+                </div>
+              </div>
+
+              <div class="feedback__textarea">
+                <label class="visually-hidden" for="question-id">Ваш вопрос</label>
+                <textarea name="question" id="question-id" placeholder="Ваш вопрос" minlength="5" maxlength="200" required></textarea>
+              </div>
+
+
+              <div class="feedback__button-wrapper">
+                <button class="button button--form" type="submit">Задать вопрос</button>
+
+                <div class="checkbox feedback__checkbox">
+                  <input type="checkbox" name="checkbox" id="checkbox-id">
+                  <label for="checkbox-id">Я согласен на обработку  персональных данных</label>
+                </div>
+              </div>
+
+            </form>
           </div>
-
-          <label class="visually-hidden" for="question-id">Ваш вопрос</label>
-          <textarea name="question" id="question-id" placeholder="Ваш вопрос"></textarea>
-
-
-          <button class="button button--form" type="submit">Задать вопрос</button>
-
-          <input type="checkbox" name="checkbox" id="checkbox-id">
-          <label for="checkbox-id">Я согласен на обработку  персональных данных</label>
-
-        </form>
+        </div>
 
       </section>
 
@@ -181,8 +195,10 @@
 
         <div class="logo">
           <img class="logo__img" src="./img/logo.svg" alt="Логотип Smart device" width="52" height="52">
-          <p class="logo__header">Smart Device</p>
-          <p class="logo__subtitle">Умные технологии</p>
+          <div class="logo__wrapper">
+            <p class="logo__title">Smart Device</p>
+            <p class="logo__subtitle">Умные технологии</p>
+          </div>
         </div>
 
         <section class="footer__social">

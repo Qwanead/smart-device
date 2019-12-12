@@ -28,7 +28,7 @@ font-weight: normal;
        url('../fonts/roboto-v20-cyrillic_latin-500.svg#Roboto') format('svg'); /* Legacy iOS */
 }
 
-// & > * {
+    // & > * {
     //   outline: 1px dashed red;
 
     //   & > * {

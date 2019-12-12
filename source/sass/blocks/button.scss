@@ -47,6 +47,12 @@
     color: $alternative-background-color;
     border: 1px solid $alternative-background-color;
   }
+
+  &--form {
+    min-width: 270px;
+
+    color: $contrast-text-color;
+  }
 }
 
 @media (max-width: $desktop-width) {
