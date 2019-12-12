@@ -27,3 +27,15 @@ font-weight: normal;
        url('../fonts/roboto-v20-cyrillic_latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/roboto-v20-cyrillic_latin-500.svg#Roboto') format('svg'); /* Legacy iOS */
 }
+
+// & > * {
+    //   outline: 1px dashed red;
+
+    //   & > * {
+    //     outline: 1px dashed blue;
+
+    //     & > * {
+    //       outline: 1px dashed yellow;
+    //     }
+    //   }
+    // }
