@@ -33,6 +33,20 @@
   line-height: 14px;
 }
 
+.logo--footer {
+  margin-left: 6px;
+  padding-top: 12px;
+  padding-left: 5px;
+}
+
+.logo__title--footer {
+  color: $default-text-color;
+}
+
+.logo__wrapper--footer {
+  padding-top: 6px;
+}
+
 @media (max-width: $desktop-width) {
   .logo {
     padding-left: 25px;
@@ -40,6 +54,14 @@
 
   .logo__wrapper {
     padding-top: 5px;
+  }
+
+  .logo--footer {
+    padding-left: 19px;
+  }
+
+  .logo__wrapper--footer {
+    padding-top: 8px;
   }
 }
 
@@ -55,5 +77,19 @@
 
   .logo__wrapper {
     display: none;
+  }
+
+  .logo--footer {
+    margin-right: 6px;
+    padding-left: 0;
+  }
+
+  .logo__wrapper--footer {
+    display: block;
+  }
+
+  .logo--footer img {
+    width: 52px;
+    height: 52px;
   }
 }

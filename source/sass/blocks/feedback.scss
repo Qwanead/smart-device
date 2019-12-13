@@ -62,13 +62,13 @@ textarea {
   height: 50px;
   padding-left: 20px;
 
+  transition: opacity $animation;
+
   color: $contrast-text-color;
   border: none;
   background-color: $input-color;
 
   &:hover {
-    transition: opacity $animation;
-
     opacity: 0.5;
   }
 }

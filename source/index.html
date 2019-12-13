@@ -191,66 +191,110 @@
 
     <footer class="footer">
 
-      <div class="footer__social-wrapper">
+      <div class="footer__top-block">
+        <div class="footer__social-wrapper">
 
-        <div class="logo">
-          <img class="logo__img" src="./img/logo.svg" alt="Логотип Smart device" width="52" height="52">
-          <div class="logo__wrapper">
-            <p class="logo__title">Smart Device</p>
-            <p class="logo__subtitle">Умные технологии</p>
+          <div class="logo logo--footer">
+            <img class="logo__img" src="./img/logo.svg" alt="Логотип Smart device" width="52" height="52">
+            <div class="logo__wrapper logo__wrapper--footer">
+              <p class="logo__title logo__title--footer">Service Device</p>
+              <p class="logo__subtitle">Умные технологии</p>
+            </div>
           </div>
+
+          <p class="footer__company-tablet">1999-2018 SD Service Devices</p>
+
+
+          <section class="footer__social">
+            <h2 class="visually-hidden">Социальные сети</h2>
+            <a href="#"></a>
+            <ul class="social">
+
+              <li class="social__item social__item--fb">
+                <a href="#">
+                  <svg width="27" height="27">
+                    <use xlink:href="#icon-fb"></use>
+                  </svg>
+                  Мы в Facebook
+                </a>
+              </li>
+
+              <li class="social__item social__item--ok">
+                <a href="#">
+                  <svg width="26.33" height="26">
+                    <use xlink:href="#icon-ok"></use>
+                  </svg>
+                  Мы в Одноклассниках
+                </a>
+              </li>
+
+              <li class="social__item social__item--vk">
+                <a href="#">
+                  <svg width="26.93" height="26">
+                    <use xlink:href="#icon-vk"></use>
+                  </svg>
+                  Мы в Вконтакте
+                </a>
+              </li>
+            </ul>
+          </section>
+
         </div>
 
-        <section class="footer__social">
-          <h2 class="visually-hidden">Социальные сети</h2>
-          <a href="#"></a>
-          <ul class="social">
-            <li class="social__item social__item--fb"><a href="#">Facebook</a></li>
-            <li class="social__item social__item--ok"><a href="#">Одноклассники</a></li>
-            <li class="social__item social__item--vk"><a href="#">Вконтакте</a></li>
-          </ul>
-        </section>
+        <div class="footer__line footer__line--tablet"></div>
 
+        <div class="footer__site-map-wrapper">
+          <section class="footer__site-map">
+            <div class="footer__button-wrapper">
+              <h2>Разделы сайта</h2>
+              <button class="footer__button">Скрыть/Показать</button>
+            </div>
+
+            <ul class="footer__site-map-list">
+              <li class="footer__site-map-item"><a href="#">О компании</a></li>
+              <li class="footer__site-map-item"><a href="#">Продукты</a></li>
+              <li class="footer__site-map-item"><a href="#">Производство печатных плат</a></li>
+              <li class="footer__site-map-item"><a href="#">Монтаж печатных плат</a></li>
+              <li class="footer__site-map-item"><a href="#">Комплектующие</a></li>
+              <li class="footer__site-map-item"><a href="#">Доставка</a></li>
+              <li class="footer__site-map-item"><a href="#">Контакты</a></li>
+            </ul>
+
+          </section>
+
+          <div class="footer__line footer__line--mobile"></div>
+
+
+          <section class="footer__office">
+            <div class="footer__button-wrapper">
+              <h2>Наш офис</h2>
+              <button class="footer__button">Скрыть/Показать</button>
+            </div>
+
+            <ul class="footer__office-list">
+              <li>г. Мытищи, Олимпийский проспект, д.10</li>
+              <li><a href="tel:+74955894050">+7 (495) 589-40-50</a></li>
+              <li><a href="tel:+79250038767">+7 (925) 003-87-67</a></li>
+              <li><a href="tel:+792692608079">+7 (926) 926-080-79</a></li>
+            </ul>
+          </section>
+        </div>
       </div>
 
-      <section class="footer__site-map">
-        <h2>Разделы сайта</h2>
-
-        <ul class="footer__site-map-list">
-          <li class="footer__site-map-item"><a href="#">О компании</a></li>
-          <li class="footer__site-map-item"><a href="#">Продукты</a></li>
-          <li class="footer__site-map-item"><a href="#">Производство печатных плат</a></li>
-          <li class="footer__site-map-item"><a href="#">Монтаж печатных плат</a></li>
-          <li class="footer__site-map-item"><a href="#">Комплектующие</a></li>
-          <li class="footer__site-map-item"><a href="#">Доставка</a></li>
-          <li class="footer__site-map-item"><a href="#">Контакты</a></li>
-        </ul>
-
-      </section>
-
-      <section class="footer__office">
-        <h2>Наш офис</h2>
-
-        <p>г. Мытищи, Олимпийский проспект, д.10</p>
-        <ul>
-          <li><a href="tel:+74955894050">+7 (495) 589-40-50</a></li>
-          <li><a href="tel:+79250038767">+7 (925) 003-87-67</a></li>
-          <li><a href="tel:+792692608079">+7 (926) 926-080-79</a></li>
-        </ul>
-      </section>
+      <div class="footer__line"></div>
 
       <section class="footer__copyright">
         <h2 class="visually-hidden">Копирайт</h2>
 
-        <p>Все права защищены</p>
-        <p>1999-2018 SD Service Devices</p>
-        <a href="#">Условия конфиденциальности</a>
-        <a href="#">Developed by wow studio </a>
+        <p class="footer__copyright-item footer__copyright-reserved">Все права защищены</p>
+        <p class="footer__copyright-item footer__copyright-company">1999-2018 SD Service Devices</p>
+        <a class="footer__copyright-item footer__copyright-privacy" href="#">Условия конфиденциальности</a>
+        <a class="footer__copyright-item footer__copyright-develop" href="#">Developed by wow studio </a>
       </section>
 
     </footer>
 
-    <section class="modal">
+    <section class="modal visually-hidden">
 
       <button class="modal__close">Закрыть</button>
 
@@ -278,6 +322,7 @@
 
     </section>
 
+    <script src="./js/script.js"></script>
   </body>
 
 </html>

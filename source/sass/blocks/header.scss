@@ -6,7 +6,6 @@
     url("../img/circuit-desktop@1x.png"),
     url("../img/background-desktop@1x.png");
   background-repeat: no-repeat;
-  // background-position: 1037px 260px, center;
   background-position: 86.5% 70.5%, center;
 
   @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
@@ -15,19 +14,11 @@
       url("../img/background-desktop@2x.png");
     background-size: 705px 515px, cover;
   }
+}
 
-
-  // > * > * {
-  //   outline: 1px dashed pink;
-
-  //   > * {
-  //     outline: 1px dashed red;
-
-  //     > * {
-  //       outline: 1px dashed blue;
-  //     }
-  //   }
-  // }
+.header__item--mail a:hover,
+.header__item--tel a:hover {
+  text-decoration: underline;
 }
 
 .header__outer-wrapper {
@@ -48,12 +39,12 @@
 
 .header__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 
   padding: 0;
 
   list-style-type: none;
-  flex-wrap: wrap;
 }
 
 .header__item a {
