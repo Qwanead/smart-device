@@ -64,6 +64,10 @@
 
     color: $contrast-text-color;
   }
+
+  &--modal {
+    color: $contrast-text-color;
+  }
 }
 
 @media (max-width: $desktop-width) {

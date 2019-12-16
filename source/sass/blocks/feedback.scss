@@ -57,7 +57,7 @@
 
 .feedback input[type="text"],
 .feedback input[type="tel"],
-textarea {
+.feedback textarea {
   width: 270px;
   height: 50px;
   padding-left: 20px;
@@ -75,7 +75,7 @@ textarea {
 
 .feedback input[type="text"]::placeholder,
 .feedback input[type="tel"]::placeholder,
-textarea::placeholder {
+.feedback textarea::placeholder {
   color: $contrast-text-color;
 }
 

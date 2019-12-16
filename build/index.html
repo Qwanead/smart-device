@@ -94,11 +94,11 @@
             <div class="main-screen__description">
               <h2>Печатные платы</h2>
               <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-              <a href="#" class="button button--main-screen">
+              <a href="#feedback-id" class="button button--main-screen">
                 <span class="main-screen__button-text">Получить бесплатную консультацию</span>
                 <span class="main-screen__button-text main-screen__button-text--mobile">Бесплатная консультация</span>
               </a>
-              <div class="main-screen__scroll">Скролл вниз</div>
+              <a href="#advantages-id" class="main-screen__scroll">Скролл вниз</a>
             </div>
           </section>
         </div>
@@ -109,7 +109,7 @@
     <main>
 
       <div class="advantages-about-wrapper">
-        <section class="advantages">
+        <section id="advantages-id" class="advantages">
 
           <h2 class="visually-hidden">Преимущества</h2>
 
@@ -183,7 +183,7 @@
 
       </section>
 
-      <section class="feedback">
+      <section id="feedback-id" class="feedback">
 
         <div class="feedback__wrapper">
           <div class="feedback__form-wrapper">
@@ -200,7 +200,7 @@
 
                 <div class="feedback__tel">
                   <label class="visually-hidden" for="tel-id">Телефон</label>
-                  <input type="tel" name="tel" id="tel-id" placeholder="Телефон" pattern="(\+?\d[- .]*){7,13}" required="">
+                  <input type="tel" name="tel" id="tel-id" placeholder="Телефон" required="">
                 </div>
               </div>
 
@@ -214,7 +214,7 @@
                 <button class="button button--form" type="submit">Задать вопрос</button>
 
                 <div class="checkbox feedback__checkbox">
-                  <input type="checkbox" name="checkbox" id="checkbox-id">
+                  <input type="checkbox" name="checkbox" id="checkbox-id" required="">
                   <label for="checkbox-id">Я согласен на обработку  персональных данных</label>
                 </div>
               </div>
@@ -245,7 +245,6 @@
 
           <section class="footer__social">
             <h2 class="visually-hidden">Социальные сети</h2>
-            <a href="#"></a>
             <ul class="social">
 
               <li class="social__item social__item--fb">
@@ -332,35 +331,40 @@
 
     </footer>
 
-    <section class="modal visually-hidden">
+    <section class="modal">
 
-      <button class="modal__close">Закрыть</button>
+      <div class="modal__wrapper">
+        <button class="modal__close">Закрыть</button>
 
-      <h2>Закажите звонок</h2>
-      <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+        <h2>Закажите звонок</h2>
+        <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
 
-      <form method="post" action="https://echo.htmlacademy.ru">
+        <form method="post" action="https://echo.htmlacademy.ru">
 
-        <label class="visually-hidden" for="modal-name-id">Имя</label>
-        <input type="text" name="name" id="modal-name-id" placeholder="Имя">
+          <label class="visually-hidden" for="modal-name-id">Имя</label>
+          <input type="text" name="name" id="modal-name-id" placeholder="Имя" maxlength="20" required="">
 
-        <label class="visually-hidden" for="modal-tel-id">Телефон</label>
-        <input type="tel" name="tel" id="modal-tel-id" placeholder="Телефон">
+          <label class="visually-hidden" for="modal-tel-id">Телефон</label>
+          <input type="tel" name="tel" id="modal-tel-id" placeholder="Телефон">
 
-        <label class="visually-hidden" for="modal-question-id">Ваш вопрос</label>
-        <textarea name="question" id="modal-question-id" placeholder="Ваш вопрос"></textarea>
+          <label class="visually-hidden" for="modal-question-id">Ваш вопрос</label>
+          <textarea name="question" id="modal-question-id" placeholder="Ваш вопрос" minlength="5" maxlength="200" required=""></textarea>
 
 
-        <button class="button button--modal" type="submit">Отправить</button>
+          <button class="button button--modal" type="submit">Отправить</button>
 
-        <input type="checkbox" name="checkbox" id="modal-checkbox-id">
-        <label for="modal-checkbox-id">Я согласен на обработку  персональных данных</label>
+          <div class="checkbox checkbox--modal modal__checkbox">
+            <input type="checkbox" name="checkbox" id="modal-checkbox-id" required="">
+            <label for="modal-checkbox-id">Я согласен на обработку  персональных данных</label>
+          </div>
 
-      </form>
+        </form>
+      </div>
 
     </section>
 
-    <script src="./js/script.js"></script>
+    <script src="./js/vendor.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 
 </html>

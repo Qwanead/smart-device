@@ -4,7 +4,10 @@
   opacity: 0.8;
   color: $contrast-text-color;
 
+  font-family: "PT Mono", "Arial", sans-serif;
   font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
   line-height: 16px;
 
 
@@ -47,4 +50,11 @@
 
 .checkbox input[type="checkbox"]:focus + label {
   outline: 1px solid $contrast-text-color;
+}
+
+.checkbox--modal label {
+  &::before {
+    top: 2px;
+    left: -48px;
+  }
 }
