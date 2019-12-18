@@ -1,10 +1,23 @@
 .main-screen {
   position: relative;
 
-  min-height: 500px;
-  margin-top: 217px;
+  min-height: 700px;
   margin-right: 20px;
   margin-left: 20px;
+  padding-top: 217px;
+
+  background-image:
+    url("./../img/circuit-desktop@1x.png"),
+    url("./../img/main-triangles-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-position: 87.7% 85%, 36% 55%;
+
+  @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
+    background-image:
+      url("./../img/circuit-desktop@2x.png"),
+      url("./../img/main-triangles-desktop@2x.png");
+    background-size: 705px 515px, 1920px 881px;
+  }
 }
 
 .main-screen img {
@@ -88,9 +101,22 @@
 
 @media (max-width: $desktop-width) {
   .main-screen {
-    margin-top: 114px;
+    min-height: 613px;
     margin-right: 0;
     margin-left: 0;
+    padding-top: 114px;
+
+    background-image:
+      url("./../img/circuit-tablet@1x.png"),
+      url("./../img/main-triangles-tablet@1x.png");
+    background-position: 100% 15%, 100% -145%;
+
+    @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
+      background-image:
+        url("./../img/circuit-tablet@2x.png"),
+        url("./../img/main-triangles-tablet@2x.png");
+      background-size: 260px 340px, 770px 563px;
+    }
   }
 
   .main-screen__description {
@@ -128,7 +154,19 @@
 @media (max-width: $tablet-width) {
   .main-screen {
     min-height: auto;
-    margin-top: 227px;
+    padding-top: 227px;
+
+    background-image:
+      url("./../img/circuit-mobile@1x.png"),
+      url("./../img/main-triangles-mobile@1x.png");
+    background-position: 100% 11%, 100% -60px;
+
+    @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
+      background-image:
+        url("./../img/circuit-mobile@2x.png"),
+        url("./../img/main-triangles-mobile@2x.png");
+      background-size: 294px 220px, 320px 529px;
+    }
   }
 
   .main-screen__description {

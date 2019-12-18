@@ -2,17 +2,12 @@
   min-height: 878px;
 
   background-color: $default-background-color;
-  background-image:
-    url("../img/circuit-desktop@1x.png"),
-    url("../img/background-desktop@1x.png");
+  background-image: url("../img/main-bg-desktop@1x.png");
   background-repeat: no-repeat;
-  background-position: 86.5% 70.5%, center;
+  background-size: cover;
 
   @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
-    background-image:
-      url("../img/circuit-desktop@2x.png"),
-      url("../img/background-desktop@2x.png");
-    background-size: 705px 515px, cover;
+    background-image: url("../img/main-bg-desktop@2x.png");
   }
 }
 
@@ -20,18 +15,10 @@
   .main-screen-wrapper {
     min-height: 622px;
 
-    background-image:
-      url("../img/circuit-tablet@1x.png"),
-      url("../img/background-tablet@1x.png");
-    background-repeat: no-repeat;
-    background-position: 100% 32.7%, 0 0;
-    background-size: auto, cover;
+    background-image: url("../img/main-bg-tablet@1x.png");
 
     @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
-      background-image:
-        url("../img/circuit-tablet@2x.png"),
-        url("../img/background-tablet@2x.png");
-      background-size: 260px 340px, cover;
+      background-image: url("../img/main-bg-tablet@2x.png");
     }
   }
 }
@@ -40,17 +27,10 @@
   .main-screen-wrapper {
     min-height: 647px;
 
-    background-image:
-      url("../img/circuit-mobile@1x.png"),
-      url("../img/background-mobile@1x.png");
-    background-position: 100% 21.5%, 0 0;
-    background-size: auto, cover;
+    background-image: url("../img/main-bg-mobile@1x.png");
 
     @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
-      background-image:
-        url("../img/circuit-mobile@2x.png"),
-        url("../img/background-mobile@2x.png");
-      background-size: 294px 220px, cover;
+      background-image: url("../img/main-bg-mobile@2x.png");
     }
   }
 }
