@@ -3,6 +3,8 @@
 
   min-height: 500px;
   margin-top: 217px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .main-screen img {
@@ -14,6 +16,8 @@
 .main-screen__description {
   position: relative;
 
+  max-width: 1420px;
+  margin: 0 auto;
   padding-left: 6px;
 
   color: $contrast-text-color;
@@ -85,10 +89,13 @@
 @media (max-width: $desktop-width) {
   .main-screen {
     margin-top: 114px;
+    margin-right: 0;
+    margin-left: 0;
   }
 
   .main-screen__description {
-    width: 600px;
+    width: 100%;
+    padding-right: 160px;
     padding-left: 87px;
   }
 
@@ -126,6 +133,7 @@
 
   .main-screen__description {
     width: auto;
+    padding-right: 0;
     padding-left: 0;
   }
 
