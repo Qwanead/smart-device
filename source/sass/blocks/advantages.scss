@@ -1,18 +1,18 @@
 .advantages__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
 
   max-width: 1200px;
   margin: 0 auto;
   padding: 0;
-  padding-left: 15px;
+  padding-left: 22px;
 
   list-style: none;
 }
 
 .advantages__item {
-  width: 48%;
+  width: 48.4%;
   min-height: 299px;
   margin-top: 30px;
   padding: 39px 42px 0;
