@@ -1,5 +1,14 @@
 'use strict';
 
+// дублирование html-элемента
+
+var footerLogo = document.querySelector('.logo--footer');
+var copyrightCompany = document.querySelector('.footer__copyright-company');
+var copyrightCompanyTablet = copyrightCompany.cloneNode(true);
+
+copyrightCompanyTablet.className = 'footer__company-tablet';
+footerLogo.after(copyrightCompanyTablet);
+
 // аккордеон
 
 var siteMapTitle = document.querySelector('.footer__site-map-wrapper .footer__button-wrapper');
