@@ -6,8 +6,10 @@ var footerLogo = document.querySelector('.logo--footer');
 var copyrightCompany = document.querySelector('.footer__copyright-company');
 var copyrightCompanyTablet = copyrightCompany.cloneNode(true);
 
-copyrightCompanyTablet.className = 'footer__company-tablet';
-footerLogo.after(copyrightCompanyTablet);
+if (copyrightCompany) {
+  copyrightCompanyTablet.className = 'footer__company-tablet';
+  footerLogo.after(copyrightCompanyTablet);
+}
 
 // аккордеон
 
@@ -21,18 +23,46 @@ var officeList = document.querySelector('.footer__office-list');
 if (siteMapTitle && siteMapButton && siteMapList &&
     officeTitle && officeButton && officeList) {
 
-  siteMapButton.classList.toggle('footer__button--close');
-  siteMapList.classList.toggle('footer__site-map-list--hide');
-
-  var switchLists = function () {
+  var siteMapToggle = function () {
     siteMapButton.classList.toggle('footer__button--close');
     siteMapList.classList.toggle('footer__site-map-list--hide');
+  };
+
+  var officeListToggle = function () {
     officeButton.classList.toggle('footer__button--close');
     officeList.classList.toggle('footer__office-list--hide');
   };
 
-  siteMapTitle.addEventListener('click', switchLists);
-  officeTitle.addEventListener('click', switchLists);
+  siteMapToggle();
+
+  var isAccordionOpen = function (accordion) {
+    if (accordion.classList.contains('footer__site-map-list--hide') ||
+      accordion.classList.contains('footer__office-list--hide')) {
+      return false;
+    }
+    return true;
+  };
+
+  var onSiteMapClick = function () {
+    if (isAccordionOpen(officeList) && !isAccordionOpen(siteMapList)) {
+      officeListToggle();
+      siteMapToggle();
+    } else {
+      siteMapToggle();
+    }
+  };
+
+  var onOfficeListClick = function () {
+    if (!isAccordionOpen(officeList) && isAccordionOpen(siteMapList)) {
+      officeListToggle();
+      siteMapToggle();
+    } else {
+      officeListToggle();
+    }
+  };
+
+  siteMapTitle.addEventListener('click', onSiteMapClick);
+  officeTitle.addEventListener('click', onOfficeListClick);
 }
 
 // Плавный скролл
