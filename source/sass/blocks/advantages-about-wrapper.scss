@@ -2,7 +2,7 @@
   background-image: url("./../img/triangles-background-desktop@1x.png");
   background-repeat: no-repeat;
   background-position: center -29px;
-  background-size: auto;
+  background-size: cover;
 
   @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
     background-image: url("./../img/triangles-background-desktop@2x.png");
@@ -14,6 +14,8 @@
   .advantages-about-wrapper {
     background-image: url("./../img/triangles-background-tablet@1x.png");
     background-position: 100% 88px;
+    background-size: auto;
+
 
     @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
       background-image: url("./../img/triangles-background-tablet@2x.png");
@@ -27,7 +29,7 @@
     padding-top: 17px;
 
     background-image: url("./../img/triangles-background-mobile@1x.png");
-    background-position: 100% 75.5%;
+    background-position: 100% 70.7%;
 
     @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
       background-image: url("./../img/triangles-background-mobile@2x.png");
