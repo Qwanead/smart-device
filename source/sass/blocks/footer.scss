@@ -158,12 +158,17 @@
 }
 
 .footer__copyright-reserved {
-  width: 16.64%;
+  // width: 17.64%;
   padding-left: 14px;
 }
 
 .footer__copyright-company {
-  width: 26.29%;
+  margin-left: 5.2%;
+  // width: 26.29%;
+}
+
+.footer__copyright-privacy {
+  margin-left: 10%;
 }
 
 .footer__copyright-develop {
