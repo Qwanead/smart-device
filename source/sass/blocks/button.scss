@@ -38,7 +38,7 @@
 
   &--main-screen {
     height: 55px;
-    margin: 44px 0 0 98px;
+    margin-left: 98px;
     padding: 15px 45px;
 
     text-align: center;
@@ -76,7 +76,7 @@
   }
 
   .button--main-screen {
-    margin: 56px 0 0 53px;
+    margin-left: 53px;
     padding: 15px 29px;
   }
 
@@ -88,7 +88,7 @@
 @media (max-width: $tablet-width) {
   .button--main-screen {
     width: 89.5%;
-    margin: 42px 0 0 5.7%;
+    margin-left: 5.7%;
     padding: 15px 25px;
 
     text-align: center;

@@ -32,6 +32,7 @@
 
 .feedback h2 {
   margin: 0;
+  margin-bottom: 10px;
 
   color: $contrast-text-color;
 
@@ -44,7 +45,7 @@
 
 .feedback p {
   margin: 0;
-  margin-top: 10px;
+  margin-bottom: 48px;
   padding-left: 3px;
 }
 
@@ -52,7 +53,7 @@
   display: flex;
   justify-content: space-between;
 
-  margin-top: 48px;
+  margin-bottom: 44px;
 }
 
 .feedback input[type="text"],
@@ -80,7 +81,7 @@
 }
 
 .feedback__textarea {
-  margin-top: 44px;
+  margin-bottom: 30px;
 }
 
 .feedback__textarea textarea {
@@ -94,8 +95,6 @@
 .feedback__button-wrapper {
   display: flex;
   justify-content: space-between;
-
-  margin-top: 30px;
 }
 
 .feedback__checkbox {
@@ -127,6 +126,7 @@
   }
 
   .feedback h2 {
+    margin-bottom: 16px;
     margin-left: -4px;
 
     font-size: 32px;
@@ -134,14 +134,14 @@
   }
 
   .feedback p {
-    margin-top: 16px;
+    margin-bottom: 53.5px;
     padding-left: 1px;
   }
 
   .feedback__name-tel-wrapper {
     justify-content: flex-start;
 
-    margin-top: 53.5px;
+    margin-bottom: 44px;
   }
 
   .feedback input[type="text"],
@@ -162,16 +162,12 @@
   }
 
   .feedback__textarea {
-    margin-top: 44px;
+    margin-bottom: 41px;
   }
 
   .feedback__textarea textarea {
     width: 100%;
     padding: 12px 17px;
-  }
-
-  .feedback__button-wrapper {
-    margin-top: 41px;
   }
 
   .feedback__button-wrapper button {
@@ -201,6 +197,7 @@
   }
 
   .feedback h2 {
+    margin-bottom: 14px;
     margin-left: 0;
 
     font-size: 28px;
@@ -208,7 +205,7 @@
   }
 
   .feedback p {
-    margin-top: 14px;
+    margin-bottom: 26px;
     padding-left: 0;
   }
 
@@ -216,7 +213,7 @@
     flex-direction: column;
     justify-content: flex-start;
 
-    margin-top: 26px;
+    margin-bottom: 0;
   }
 
   .feedback input[type="text"],
@@ -229,14 +226,15 @@
 
   .feedback__name {
     margin-right: 0;
+    margin-bottom: 30.45px;
   }
 
   .feedback__tel {
-    margin-top: 30.45px;
+    margin-bottom: 33px;
   }
 
   .feedback__textarea {
-    margin-top: 33px;
+    margin-bottom: 25px;
   }
 
   .feedback__textarea textarea {
@@ -245,8 +243,6 @@
 
   .feedback__button-wrapper {
     flex-direction: column;
-
-    margin-top: 25px;
   }
 
   .feedback__button-wrapper button {

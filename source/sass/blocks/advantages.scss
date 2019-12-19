@@ -1,3 +1,8 @@
+.advantages {
+  padding-top: 112px;
+  padding-bottom: 50px;
+}
+
 .advantages__list {
   display: flex;
   flex-wrap: wrap;
@@ -14,7 +19,7 @@
 .advantages__item {
   width: 48.4%;
   min-height: 299px;
-  margin-top: 30px;
+  margin-bottom: 30px;
   padding: 39px 42px 0;
 
   transition: background-color $animation;
@@ -46,12 +51,14 @@
 }
 
 .advantages__item svg {
+  margin-bottom: 14px;
+
   fill: $alternative-background-color;
 }
 
 .advantages__item h3 {
   margin: 0;
-  margin-top: 14px;
+  margin-bottom: 16px;
 
   color: $alternative-background-color;
 
@@ -63,10 +70,15 @@
 }
 
 .advantages__item p {
-  margin-top: 16px;
+  margin: 0;
 }
 
 @media (max-width: $desktop-width) {
+  .advantages {
+    padding-top: 54px;
+    padding-bottom: 16px;
+  }
+
   .advantages__list {
     width: 100%;
     padding: 0 25px;
@@ -75,18 +87,22 @@
   .advantages__item {
     width: 47.9%;
     min-height: 232px;
-    margin-top: 30px;
+    margin-bottom: 30px;
     padding: 23px 20px 0 25px;
 
     border-left: 2px solid $alternative-background-color;
   }
 
+  .advantages__item svg {
+    margin-bottom: 5px;
+  }
+
   .advantages__item h3 {
-    margin-top: 5px;
+    margin-bottom: 10px;
   }
 
   .advantages__item p {
-    margin-top: 10px;
+    margin-bottom: 17px;
   }
 
   .advantages__item--stopwatch svg {
@@ -111,6 +127,10 @@
 }
 
 @media (max-width: $tablet-width) {
+  .advantages {
+    padding-top: 17px;
+  }
+
   .advantages__list {
     padding: 0 16px 0 14px;
   }
@@ -118,7 +138,7 @@
   .advantages__item {
     width: 100%;
     min-height: auto;
-    margin-top: 20px;
+    margin-bottom: 20px;
     padding: 23px 20px 7px 25px;
 
     &:nth-child(odd) {
@@ -126,9 +146,11 @@
     }
   }
 
-  .advantages__item h3 {
-    margin-top: 7px;
+  .advantages__item svg {
+    margin-bottom: 7px;
+  }
 
+  .advantages__item h3 {
     font-size: 20px;
     line-height: 28px;
   }

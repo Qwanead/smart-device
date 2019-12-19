@@ -1,7 +1,4 @@
 .advantages-about-wrapper {
-  padding-top: 82px;
-  padding-bottom: 97px;
-
   background-image: url("./../img/triangles-background-desktop@1x.png");
   background-repeat: no-repeat;
   background-position: center -29px;
@@ -15,9 +12,7 @@
 
 @media (max-width: $desktop-width) {
   .advantages-about-wrapper {
-    padding-top: 24px;
-    padding-bottom: 75px;
-
+    // padding-bottom: 75px;
     background-image: url("./../img/triangles-background-tablet@1x.png");
     background-position: 100% 88px;
 
@@ -31,7 +26,7 @@
 @media (max-width: $tablet-width) {
   .advantages-about-wrapper {
     padding-top: 17px;
-    padding-bottom: 65px;
+    // padding-bottom: 65px;
 
     background-image: url("./../img/triangles-background-mobile@1x.png");
     background-position: 100% 75.5%;

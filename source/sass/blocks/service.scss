@@ -13,6 +13,7 @@
 
 .service h2 {
   margin: 0;
+  margin-bottom: 50px;
   padding: 0 15px;
 
   color: $contrast-text-color;
@@ -28,7 +29,6 @@
   display: flex;
 
   margin: 0;
-  margin-top: 50px;
   padding: 0;
   padding-left: 15px;
 
@@ -194,6 +194,7 @@
   }
 
   .service h2 {
+    margin-bottom: 43px;
     padding: 0 5px 0 10px;
 
     font-size: 28px;
@@ -203,7 +204,6 @@
   .service__list {
     flex-direction: column;
 
-    margin-top: 43px;
     padding: 0;
   }
 
