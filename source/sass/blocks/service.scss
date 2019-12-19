@@ -1,6 +1,6 @@
 .service {
   padding-top: 90px;
-  padding-bottom: 127px;
+  padding-bottom: 97px;
 
   background-color: $default-background-color;
 }
@@ -27,6 +27,7 @@
 
 .service__list {
   display: flex;
+  flex-wrap: wrap;
 
   margin: 0;
   padding: 0;
@@ -36,11 +37,13 @@
 }
 
 .service__list li {
-  width: 31.76%;
+  width: 31.58%;
+  max-width: 370px;
   height: 620px;
-  margin-right: 30px;
+  margin-right: 2.6%;
+  margin-bottom: 30px;
 
-  &:last-of-type {
+  &:nth-of-type(3n) {
     margin-right: 0;
   }
 }
