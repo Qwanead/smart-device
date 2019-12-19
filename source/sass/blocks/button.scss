@@ -1,7 +1,7 @@
 .button {
   display: inline-block;
 
-  height: 45px;
+  min-height: 45px;
   padding: 15px 25px;
 
   transition: opacity $animation;
@@ -31,12 +31,15 @@
   }
 
   &--header {
+    max-width: 177.27px;
+
     transform: translate(0, -2px);
 
     color: $contrast-text-color;
   }
 
   &--main-screen {
+    max-width: 408.61px;
     height: 55px;
     margin-left: 98px;
     padding: 15px 45px;
