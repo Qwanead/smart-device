@@ -2,6 +2,11 @@
   padding-top: 53px;
 
   background-color: $footer-background-color;
+  color: $footer-text-color;
+}
+
+.footer a {
+  color: $footer-text-color;
 }
 
 .footer a:hover {

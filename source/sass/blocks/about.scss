@@ -3,7 +3,7 @@
   min-height: 350px;
   margin: 0 auto;
   padding-top: 25px;
-  padding-bottom: 107px;
+  padding-bottom: 104px;
   padding-left: 187px;
 
   background-image: url("./../img/2005-desktop@1x.png");
@@ -47,8 +47,8 @@
     min-height: 360px;
     padding-top: 10px;
     padding-right: 20px;
-    padding-left: 210px;
     padding-bottom: 79px;
+    padding-left: 210px;
 
     background-image: url("./../img/2005-tablet@1x.png");
     background-position: 0 8px;
@@ -82,11 +82,10 @@
 @media (max-width: $tablet-width) {
   .about {
     min-height: 300px;
-    padding-right: 12px;
-    padding-left: 15px;
     padding-top: 21px;
+    padding-right: 12px;
     padding-bottom: 61px;
-
+    padding-left: 15px;
 
     background-image: none;
   }
