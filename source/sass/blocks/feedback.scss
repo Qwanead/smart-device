@@ -4,13 +4,12 @@
 
   color: $contrast-text-color;
   background-color: $alternative-background-color;
-  background-image: url("./../img/paper-airplane@1x.png");
+  background-image: url("./../img/paper-airplane@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 109% 63%;
+  background-size: covercontain;
 
   @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
-    background-image: url("./../img/paper-airplane@2x.png");
-    background-size: 1745px 765px;
+    background-image: url("./../img/paper-airplane@2x.jpg");
   }
 }
 
