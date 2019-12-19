@@ -6,7 +6,7 @@
   background-color: $alternative-background-color;
   background-image: url("./../img/paper-airplane@1x.jpg");
   background-repeat: no-repeat;
-  background-size: covercontain;
+  background-size: cover;
 
   @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
     background-image: url("./../img/paper-airplane@2x.jpg");
