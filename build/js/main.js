@@ -112,6 +112,7 @@ var form = popup.querySelector('.modal form');
 var inputName = popup.querySelector('[name=name]');
 var inputTel = popup.querySelector('[name=tel]');
 var textarea = popup.querySelector('textarea');
+var body = document.querySelector('body');
 var isStorageSupport = true;
 var storageName = '';
 var storageTel = '';
@@ -125,6 +126,7 @@ try {
 
 openButton.addEventListener('click', function (evt) {
   evt.preventDefault();
+  body.style.overflowY = 'hidden';
   popup.classList.add('modal--show');
   if (storageName && storageTel) {
     inputName.value = storageName;
@@ -137,6 +139,7 @@ openButton.addEventListener('click', function (evt) {
 
 close.addEventListener('click', function (evt) {
   evt.preventDefault();
+  body.style.overflowY = 'auto';
   popup.classList.remove('modal--show');
 });
 
@@ -152,6 +155,7 @@ window.addEventListener('keydown', function (evt) {
     evt.preventDefault();
     if (popup.classList.contains('modal--show')) {
       popup.classList.remove('modal--show');
+      body.style.overflowY = 'auto';
     }
   }
 });
@@ -160,6 +164,7 @@ popup.addEventListener('click', function (evt) {
   if (evt.target === popup) {
     if (popup.classList.contains('modal--show')) {
       popup.classList.remove('modal--show');
+      body.style.overflowY = 'auto';
     }
   }
 });
