@@ -15,7 +15,7 @@ if (copyrightCompany) {
 
 var siteMapTitle = document.querySelector('.footer__site-map-wrapper .footer__button-wrapper');
 var siteMapButton = document.querySelector('.footer__site-map button');
-var siteMapList = document.querySelector('.footer__site-map-list');
+var siteMapList = document.querySelector('.footer__site-map-list-wrapper');
 var officeTitle = document.querySelector('.footer__office .footer__button-wrapper');
 var officeButton = document.querySelector('.footer__office button');
 var officeList = document.querySelector('.footer__office-list');
@@ -25,7 +25,7 @@ if (siteMapTitle && siteMapButton && siteMapList &&
 
   var siteMapToggle = function () {
     siteMapButton.classList.toggle('footer__button--close');
-    siteMapList.classList.toggle('footer__site-map-list--hide');
+    siteMapList.classList.toggle('footer__site-map-list-wrapper--hide');
   };
 
   var officeListToggle = function () {
@@ -36,7 +36,7 @@ if (siteMapTitle && siteMapButton && siteMapList &&
   siteMapToggle();
 
   var isAccordionOpen = function (accordion) {
-    if (accordion.classList.contains('footer__site-map-list--hide') ||
+    if (accordion.classList.contains('footer__site-map-list-wrapper--hide') ||
       accordion.classList.contains('footer__office-list--hide')) {
       return false;
     }
