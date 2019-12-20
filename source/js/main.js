@@ -8,7 +8,7 @@ var copyrightCompanyTablet = copyrightCompany.cloneNode(true);
 
 if (copyrightCompany) {
   copyrightCompanyTablet.className = 'footer__company-tablet';
-  footerLogo.after(copyrightCompanyTablet);
+  footerLogo.insertAdjacentElement('afterend', copyrightCompanyTablet);
 }
 
 // аккордеон
