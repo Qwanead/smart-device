@@ -32,7 +32,7 @@
   }
 
   &--header {
-    max-width: 177.27px;
+    width: 177.27px;
 
     transform: translate(0, -2px);
 
@@ -40,7 +40,7 @@
   }
 
   &--main-screen {
-    max-width: 408.61px;
+    width: 408.61px;
     height: 55px;
     margin-left: 98px;
     padding: 15px 45px;
@@ -80,6 +80,7 @@
   }
 
   .button--main-screen {
+    width: 376.61px;
     margin-left: 53px;
     padding: 15px 29px;
   }
