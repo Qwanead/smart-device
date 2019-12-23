@@ -20,7 +20,7 @@
   width: 48.4%;
   min-height: 299px;
   margin-bottom: 30px;
-  padding: 39px 42px 0;
+  padding: 39px 42px 20px;
 
   transition: background-color $animation;
 
@@ -88,7 +88,7 @@
     width: 47.9%;
     min-height: 232px;
     margin-bottom: 30px;
-    padding: 23px 20px 0 25px;
+    padding: 23px 20px 17px 25px;
 
     border-left: 2px solid $alternative-background-color;
   }
@@ -102,7 +102,7 @@
   }
 
   .advantages__item p {
-    margin-bottom: 17px;
+    margin-bottom: 0;
   }
 
   .advantages__item--stopwatch svg {
@@ -139,7 +139,7 @@
     width: 100%;
     min-height: auto;
     margin-bottom: 20px;
-    padding: 23px 20px 7px 25px;
+    padding: 23px 20px 23px 25px;
 
     &:nth-child(odd) {
       margin-right: 0;
