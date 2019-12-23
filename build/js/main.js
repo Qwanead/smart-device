@@ -1,6 +1,6 @@
 'use strict';
 
-// дублирование html-элемента
+// дублирование html-элементов
 
 var footerLogo = document.querySelector('.logo--footer');
 var copyrightCompany = document.querySelector('.footer__copyright-company');
@@ -9,6 +9,24 @@ var copyrightCompanyTablet = copyrightCompany.cloneNode(true);
 if (copyrightCompany) {
   copyrightCompanyTablet.className = 'footer__company-tablet';
   footerLogo.insertAdjacentElement('afterend', copyrightCompanyTablet);
+}
+
+var footerLine = document.querySelector('.footer__line');
+var footerSocial = document.querySelector('.footer__social-wrapper');
+var footerSiteMap = document.querySelector('.footer__site-map');
+
+if (footerLine && footerSocial) {
+  var footerLineTablet = footerLine.cloneNode(true);
+
+  footerLineTablet.classList.add('footer__line--tablet');
+  footerSocial.insertAdjacentElement('afterend', footerLineTablet);
+}
+
+if (footerLine && footerSiteMap) {
+  var footerLineMobile = footerLine.cloneNode(true);
+
+  footerLineMobile.classList.add('footer__line--mobile');
+  footerSiteMap.insertAdjacentElement('afterend', footerLineMobile);
 }
 
 // аккордеон
