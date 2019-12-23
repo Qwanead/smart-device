@@ -2,16 +2,16 @@
   position: relative;
 
   min-height: 700px;
-  margin-right: 20px;
   margin-left: 20px;
   padding-top: 217px;
+  padding-right: 20px;
   padding-bottom: 50px;
 
   background-image:
     url("./../img/circuit-desktop@1x.png"),
     url("./../img/main-triangles-desktop@1x.png");
   background-repeat: no-repeat;
-  background-position: 50% 57%, 36% 55%;
+  background-position: 50% 57%, 56% 55%;
 
   @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
     background-image:
@@ -110,9 +110,9 @@
 @media (max-width: $desktop-width) {
   .main-screen {
     min-height: 613px;
-    margin-right: 0;
     margin-left: 0;
     padding-top: 114px;
+    padding-right: 0;
 
     background-image:
       url("./../img/circuit-tablet@1x.png"),
