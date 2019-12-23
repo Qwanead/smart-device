@@ -85,13 +85,12 @@ if (siteMapTitle && siteMapButton && siteMapList &&
 
 // Плавный скролл
 
-// собираем все якоря; устанавливаем время анимации и количество кадров
 var feedbackLink = document.querySelector('a[href="#feedback-id"]');
 var advantagesLink = document.querySelector('a[href="#advantages-id"]');
 
 var onAnchorClick = function (evt) {
   evt.preventDefault();
-  document.querySelector(evt.target.closest('a').getAttribute('href')).scrollIntoView({behavior: 'smooth'});
+  document.querySelector(evt.currentTarget.getAttribute('href')).scrollIntoView({behavior: 'smooth'});
 };
 
 feedbackLink.addEventListener('click', onAnchorClick);
