@@ -11,13 +11,13 @@
     url("./../img/circuit-desktop@1x.png"),
     url("./../img/main-triangles-desktop@1x.png");
   background-repeat: no-repeat;
-  background-position: 1017px 85%, 36% 55%;
+  background-position: 50% 57%, 36% 55%;
 
   @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
     background-image:
       url("./../img/circuit-desktop@2x.png"),
       url("./../img/main-triangles-desktop@2x.png");
-    background-size: 705px 515px, 1920px 881px;
+    background-size: 1920px 881px, 1920px 881px;
   }
 }
 
@@ -32,6 +32,7 @@
 
   max-width: 1420px;
   margin: 0 auto;
+  padding-right: 617px;
   padding-left: 6px;
 
   color: $contrast-text-color;
@@ -54,7 +55,6 @@
 .main-screen__description p {
   position: relative;
 
-  width: 650px;
   margin: 0;
   margin-bottom: 44px;
   margin-left: 98px;
