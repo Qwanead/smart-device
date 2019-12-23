@@ -1,9 +1,16 @@
 html {
   box-sizing: border-box;
+  height: 100%;
 }
 
 body {
   position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  height: 100%;
 
   color: $default-text-color;
 
