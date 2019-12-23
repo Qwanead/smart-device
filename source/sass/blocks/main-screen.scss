@@ -11,7 +11,7 @@
     url("./../img/circuit-desktop@1x.png"),
     url("./../img/main-triangles-desktop@1x.png");
   background-repeat: no-repeat;
-  background-position: 87.7% 85%, 36% 55%;
+  background-position: 1017px 85%, 36% 55%;
 
   @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
     background-image:
@@ -129,7 +129,7 @@
 
   .main-screen__description {
     width: 100%;
-    padding-right: 160px;
+    padding-right: 260px;
     padding-left: 87px;
   }
 
